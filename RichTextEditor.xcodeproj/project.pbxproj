@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D1CBC081F1EE32C0073DC41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1CBC071F1EE32C0073DC41 /* AppDelegate.swift */; };
+		4D1CBC0A1F1EE32C0073DC41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1CBC091F1EE32C0073DC41 /* ViewController.swift */; };
+		4D1CBC0C1F1EE32C0073DC41 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1CBC0B1F1EE32C0073DC41 /* Document.swift */; };
+		4D1CBC0E1F1EE32C0073DC41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1CBC0D1F1EE32C0073DC41 /* Assets.xcassets */; };
+		4D1CBC111F1EE32C0073DC41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1CBC0F1F1EE32C0073DC41 /* Main.storyboard */; };
+		4D1CBC1C1F1EE32C0073DC41 /* RichTextEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1CBC1B1F1EE32C0073DC41 /* RichTextEditorTests.swift */; };
+		4D1CBC271F1EE32C0073DC41 /* RichTextEditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1CBC261F1EE32C0073DC41 /* RichTextEditorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D1CBC181F1EE32C0073DC41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D1CBBFC1F1EE32B0073DC41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D1CBC031F1EE32B0073DC41;
+			remoteInfo = RichTextEditor;
+		};
+		4D1CBC231F1EE32C0073DC41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D1CBBFC1F1EE32B0073DC41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D1CBC031F1EE32B0073DC41;
+			remoteInfo = RichTextEditor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D1CBC041F1EE32B0073DC41 /* RichTextEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RichTextEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D1CBC071F1EE32C0073DC41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D1CBC091F1EE32C0073DC41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D1CBC0B1F1EE32C0073DC41 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		4D1CBC0D1F1EE32C0073DC41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D1CBC101F1EE32C0073DC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D1CBC121F1EE32C0073DC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D1CBC171F1EE32C0073DC41 /* RichTextEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RichTextEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D1CBC1B1F1EE32C0073DC41 /* RichTextEditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextEditorTests.swift; sourceTree = "<group>"; };
+		4D1CBC1D1F1EE32C0073DC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D1CBC221F1EE32C0073DC41 /* RichTextEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RichTextEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D1CBC261F1EE32C0073DC41 /* RichTextEditorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextEditorUITests.swift; sourceTree = "<group>"; };
+		4D1CBC281F1EE32C0073DC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D1CBC011F1EE32B0073DC41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D1CBC141F1EE32C0073DC41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D1CBC1F1F1EE32C0073DC41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D1CBBFB1F1EE32B0073DC41 = {
+			isa = PBXGroup;
+			children = (
+				4D1CBC061F1EE32B0073DC41 /* RichTextEditor */,
+				4D1CBC1A1F1EE32C0073DC41 /* RichTextEditorTests */,
+				4D1CBC251F1EE32C0073DC41 /* RichTextEditorUITests */,
+				4D1CBC051F1EE32B0073DC41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D1CBC051F1EE32B0073DC41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D1CBC041F1EE32B0073DC41 /* RichTextEditor.app */,
+				4D1CBC171F1EE32C0073DC41 /* RichTextEditorTests.xctest */,
+				4D1CBC221F1EE32C0073DC41 /* RichTextEditorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D1CBC061F1EE32B0073DC41 /* RichTextEditor */ = {
+			isa = PBXGroup;
+			children = (
+				4D1CBC071F1EE32C0073DC41 /* AppDelegate.swift */,
+				4D1CBC091F1EE32C0073DC41 /* ViewController.swift */,
+				4D1CBC0B1F1EE32C0073DC41 /* Document.swift */,
+				4D1CBC0D1F1EE32C0073DC41 /* Assets.xcassets */,
+				4D1CBC0F1F1EE32C0073DC41 /* Main.storyboard */,
+				4D1CBC121F1EE32C0073DC41 /* Info.plist */,
+			);
+			path = RichTextEditor;
+			sourceTree = "<group>";
+		};
+		4D1CBC1A1F1EE32C0073DC41 /* RichTextEditorTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D1CBC1B1F1EE32C0073DC41 /* RichTextEditorTests.swift */,
+				4D1CBC1D1F1EE32C0073DC41 /* Info.plist */,
+			);
+			path = RichTextEditorTests;
+			sourceTree = "<group>";
+		};
+		4D1CBC251F1EE32C0073DC41 /* RichTextEditorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D1CBC261F1EE32C0073DC41 /* RichTextEditorUITests.swift */,
+				4D1CBC281F1EE32C0073DC41 /* Info.plist */,
+			);
+			path = RichTextEditorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D1CBC031F1EE32B0073DC41 /* RichTextEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D1CBC2B1F1EE32C0073DC41 /* Build configuration list for PBXNativeTarget "RichTextEditor" */;
+			buildPhases = (
+				4D1CBC001F1EE32B0073DC41 /* Sources */,
+				4D1CBC011F1EE32B0073DC41 /* Frameworks */,
+				4D1CBC021F1EE32B0073DC41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RichTextEditor;
+			productName = RichTextEditor;
+			productReference = 4D1CBC041F1EE32B0073DC41 /* RichTextEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D1CBC161F1EE32C0073DC41 /* RichTextEditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D1CBC2E1F1EE32C0073DC41 /* Build configuration list for PBXNativeTarget "RichTextEditorTests" */;
+			buildPhases = (
+				4D1CBC131F1EE32C0073DC41 /* Sources */,
+				4D1CBC141F1EE32C0073DC41 /* Frameworks */,
+				4D1CBC151F1EE32C0073DC41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D1CBC191F1EE32C0073DC41 /* PBXTargetDependency */,
+			);
+			name = RichTextEditorTests;
+			productName = RichTextEditorTests;
+			productReference = 4D1CBC171F1EE32C0073DC41 /* RichTextEditorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4D1CBC211F1EE32C0073DC41 /* RichTextEditorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D1CBC311F1EE32C0073DC41 /* Build configuration list for PBXNativeTarget "RichTextEditorUITests" */;
+			buildPhases = (
+				4D1CBC1E1F1EE32C0073DC41 /* Sources */,
+				4D1CBC1F1F1EE32C0073DC41 /* Frameworks */,
+				4D1CBC201F1EE32C0073DC41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D1CBC241F1EE32C0073DC41 /* PBXTargetDependency */,
+			);
+			name = RichTextEditorUITests;
+			productName = RichTextEditorUITests;
+			productReference = 4D1CBC221F1EE32C0073DC41 /* RichTextEditorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D1CBBFC1F1EE32B0073DC41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Me and Mark Publishing";
+				TargetAttributes = {
+					4D1CBC031F1EE32B0073DC41 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					4D1CBC161F1EE32C0073DC41 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4D1CBC031F1EE32B0073DC41;
+					};
+					4D1CBC211F1EE32C0073DC41 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4D1CBC031F1EE32B0073DC41;
+					};
+				};
+			};
+			buildConfigurationList = 4D1CBBFF1F1EE32B0073DC41 /* Build configuration list for PBXProject "RichTextEditor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D1CBBFB1F1EE32B0073DC41;
+			productRefGroup = 4D1CBC051F1EE32B0073DC41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D1CBC031F1EE32B0073DC41 /* RichTextEditor */,
+				4D1CBC161F1EE32C0073DC41 /* RichTextEditorTests */,
+				4D1CBC211F1EE32C0073DC41 /* RichTextEditorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D1CBC021F1EE32B0073DC41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D1CBC0E1F1EE32C0073DC41 /* Assets.xcassets in Resources */,
+				4D1CBC111F1EE32C0073DC41 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D1CBC151F1EE32C0073DC41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D1CBC201F1EE32C0073DC41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D1CBC001F1EE32B0073DC41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D1CBC0A1F1EE32C0073DC41 /* ViewController.swift in Sources */,
+				4D1CBC081F1EE32C0073DC41 /* AppDelegate.swift in Sources */,
+				4D1CBC0C1F1EE32C0073DC41 /* Document.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D1CBC131F1EE32C0073DC41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D1CBC1C1F1EE32C0073DC41 /* RichTextEditorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D1CBC1E1F1EE32C0073DC41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D1CBC271F1EE32C0073DC41 /* RichTextEditorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D1CBC191F1EE32C0073DC41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D1CBC031F1EE32B0073DC41 /* RichTextEditor */;
+			targetProxy = 4D1CBC181F1EE32C0073DC41 /* PBXContainerItemProxy */;
+		};
+		4D1CBC241F1EE32C0073DC41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D1CBC031F1EE32B0073DC41 /* RichTextEditor */;
+			targetProxy = 4D1CBC231F1EE32C0073DC41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D1CBC0F1F1EE32C0073DC41 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D1CBC101F1EE32C0073DC41 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D1CBC291F1EE32C0073DC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D1CBC2A1F1EE32C0073DC41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		4D1CBC2C1F1EE32C0073DC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RichTextEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meandmark.RichTextEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4D1CBC2D1F1EE32C0073DC41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RichTextEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meandmark.RichTextEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4D1CBC2F1F1EE32C0073DC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RichTextEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meandmark.RichTextEditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RichTextEditor.app/Contents/MacOS/RichTextEditor";
+			};
+			name = Debug;
+		};
+		4D1CBC301F1EE32C0073DC41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RichTextEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meandmark.RichTextEditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RichTextEditor.app/Contents/MacOS/RichTextEditor";
+			};
+			name = Release;
+		};
+		4D1CBC321F1EE32C0073DC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RichTextEditorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meandmark.RichTextEditorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RichTextEditor;
+			};
+			name = Debug;
+		};
+		4D1CBC331F1EE32C0073DC41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RichTextEditorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meandmark.RichTextEditorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RichTextEditor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D1CBBFF1F1EE32B0073DC41 /* Build configuration list for PBXProject "RichTextEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1CBC291F1EE32C0073DC41 /* Debug */,
+				4D1CBC2A1F1EE32C0073DC41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D1CBC2B1F1EE32C0073DC41 /* Build configuration list for PBXNativeTarget "RichTextEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1CBC2C1F1EE32C0073DC41 /* Debug */,
+				4D1CBC2D1F1EE32C0073DC41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4D1CBC2E1F1EE32C0073DC41 /* Build configuration list for PBXNativeTarget "RichTextEditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1CBC2F1F1EE32C0073DC41 /* Debug */,
+				4D1CBC301F1EE32C0073DC41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4D1CBC311F1EE32C0073DC41 /* Build configuration list for PBXNativeTarget "RichTextEditorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1CBC321F1EE32C0073DC41 /* Debug */,
+				4D1CBC331F1EE32C0073DC41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D1CBBFC1F1EE32B0073DC41 /* Project object */;
+}
