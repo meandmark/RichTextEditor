@@ -10,6 +10,10 @@ import Cocoa
 
 class Document: NSDocument {
 
+    var viewController: ViewController? {
+        return windowControllers[0].contentViewController as? ViewController
+    }
+    
     override init() {
         super.init()
         // Add your subclass-specific initialization here.
