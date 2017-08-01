@@ -49,9 +49,10 @@ class Document: NSDocument {
         
         // Load the data into the text view
         makeWindowControllers()
-        if let textView = viewController?.textView {
-            let contents = NSAttributedString(rtfd: data, documentAttributes: nil)
-            textView.textStorage?.setAttributedString(contents!)
+        if let textView = viewController?.textView,
+            let contents = NSAttributedString(rtfd: data, documentAttributes: nil) {
+            
+            textView.textStorage?.setAttributedString(contents)
         }
         throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
     }
