@@ -58,6 +58,9 @@ class Document: NSDocument {
             
             textView.textStorage?.setAttributedString(contents)
         }
+        else {
+            throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
+        }
         
     }
 
