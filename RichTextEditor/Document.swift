@@ -39,7 +39,7 @@ class Document: NSDocument {
             let rangeLength = textView.string?.characters.count {
             
             let textRange = NSRange(location: 0, length: rangeLength)
-            if let contents = textView.rtfd(from: textRange) {
+            if let contents = textView.rtf(from: textRange) {
                 return contents
             }
         }
@@ -54,7 +54,7 @@ class Document: NSDocument {
         // Load the data into the text view
         makeWindowControllers()
         if let textView = viewController?.textView,
-            let contents = NSAttributedString(rtfd: data, documentAttributes: nil) {
+            let contents = NSAttributedString(rtf: data, documentAttributes: nil) {
             
             textView.textStorage?.setAttributedString(contents)
         }
