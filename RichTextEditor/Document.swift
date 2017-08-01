@@ -10,6 +10,8 @@ import Cocoa
 
 class Document: NSDocument {
 
+    var text = NSAttributedString()
+    
     var viewController: ViewController? {
         return windowControllers[0].contentViewController as? ViewController
     }
@@ -52,17 +54,7 @@ class Document: NSDocument {
         // You can also choose to override readFromFileWrapper:ofType:error: or readFromURL:ofType:error: instead.
         // If you override either of these, you should also override -isEntireFileLoaded to return false if the contents are lazily loaded.
         
-        // Load the data into the text view
-        makeWindowControllers()
-        if let textView = viewController?.textView,
-            let contents = NSAttributedString(rtf: data, documentAttributes: nil) {
-            
-            textView.textStorage?.setAttributedString(contents)
-        }
-        else {
-            throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
-        }
-        
+        text = NSAttributedString(rtf: data, documentAttributes: nil)!
     }
 
 
