@@ -38,6 +38,7 @@ class Document: NSDocument {
         if let textView = viewController?.textView,
             let rangeLength = textView.string?.characters.count {
             
+            textView.breakUndoCoalescing()
             let textRange = NSRange(location: 0, length: rangeLength)
             if let contents = textView.rtf(from: textRange) {
                 return contents
