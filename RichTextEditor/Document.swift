@@ -35,8 +35,10 @@ class Document: NSDocument {
         // You can also choose to override fileWrapperOfType:error:, writeToURL:ofType:error:, or writeToURL:ofType:forSaveOperation:originalContentsURL:error: instead.
         
         // Save the text view contents to disk
-        if let textView = viewController?.textView {
-            let textRange = NSRange(location: 0, length: (textView.string?.characters.count)!)
+        if let textView = viewController?.textView,
+            let rangeLength = textView.string?.characters.count {
+            
+            let textRange = NSRange(location: 0, length: rangeLength)
             if let contents = textView.rtfd(from: textRange) {
                 return contents
             }
