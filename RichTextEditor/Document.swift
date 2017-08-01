@@ -47,6 +47,8 @@ class Document: NSDocument {
         // You can also choose to override readFromFileWrapper:ofType:error: or readFromURL:ofType:error: instead.
         // If you override either of these, you should also override -isEntireFileLoaded to return false if the contents are lazily loaded.
         
+        // PROBLEM: The view controller is nil when I'm loading the document, causing a crash. The windowControllers array is empty so accessing element 0 causes a crash. Have to make sure the view controller exists before loading the document.
+        
         // Load the data into the text view
         if let textView = viewController?.textView {
             let contents = NSAttributedString(rtfd: data, documentAttributes: nil)
