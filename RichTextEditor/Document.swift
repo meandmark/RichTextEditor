@@ -37,7 +37,9 @@ class Document: NSDocument {
         // Save the text view contents to disk
         if let textView = viewController?.textView {
             let textRange = NSRange(location: 0, length: (textView.string?.characters.count)!)
-            return textView.rtfd(from: textRange)!
+            if let contents = textView.rtfd(from: textRange) {
+                return contents
+            }
         }
         throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
     }
