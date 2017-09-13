@@ -21,14 +21,14 @@ class Document: NSDocument {
         // Add your subclass-specific initialization here.
     }
 
-    override class func autosavesInPlace() -> Bool {
+    override class var autosavesInPlace: Bool {
         return true
     }
 
     override func makeWindowControllers() {
         // Returns the Storyboard that contains your Document window.
-        let storyboard = NSStoryboard(name: "Main", bundle: nil)
-        let windowController = storyboard.instantiateController(withIdentifier: "Document Window Controller") as! NSWindowController
+        let storyboard = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "Document Window Controller")) as! NSWindowController
         self.addWindowController(windowController)
     }
 
@@ -37,8 +37,8 @@ class Document: NSDocument {
         // You can also choose to override fileWrapperOfType:error:, writeToURL:ofType:error:, or writeToURL:ofType:forSaveOperation:originalContentsURL:error: instead.
         
         // Save the text view contents to disk
-        if let textView = viewController?.textView,
-            let rangeLength = textView.string?.characters.count {
+        if let textView = viewController?.textView {
+            let rangeLength = textView.string.characters.count
             
             textView.breakUndoCoalescing()
             let textRange = NSRange(location: 0, length: rangeLength)
