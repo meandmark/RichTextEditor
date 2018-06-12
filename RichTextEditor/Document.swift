@@ -38,7 +38,7 @@ class Document: NSDocument {
         
         // Save the text view contents to disk
         if let textView = viewController?.textView {
-            let rangeLength = textView.string.characters.count
+            let rangeLength = textView.string.count
             
             textView.breakUndoCoalescing()
             let textRange = NSRange(location: 0, length: rangeLength)
