@@ -19,6 +19,7 @@ class Document: NSDocument {
     override init() {
         super.init()
         // Add your subclass-specific initialization here.
+        NotificationCenter.default.addObserver(self, selector: #selector(windowDidMiniaturize(aNotification:)), name: NSWindow.didMiniaturizeNotification, object: nil)
     }
 
     override class var autosavesInPlace: Bool {
@@ -59,6 +60,14 @@ class Document: NSDocument {
         }
     }
 
-
+    @objc func windowDidMiniaturize(aNotification: Notification) {
+        saveText()
+    }
+    
+    func saveText() {
+        if let textView = viewController?.textView {
+            text = textView.attributedString()
+        }
+    }
 }
 
